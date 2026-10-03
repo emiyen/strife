@@ -1,0 +1,59 @@
+#row2 {
+    gap: 10px;
+    width:100%;
+}
+
+#hyperfixation {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 200px;
+}
+
+#hyperfixation img {
+    height: 100%;
+}
+
+#hyperfixation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#blogcolumn {
+    gap: 10px;
+    width: 70%;
+}
+
+#blogbox {
+    height: 190px;
+}
+
+#blogbox .whitebox {
+    height: 80%;
+    overflow: auto;
+}
+
+.postlist {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.postlist:first-child {
+    margin-top: 3px;
+}
+
+#unknownbox {
+    height: 50%;
+}
+
+#changelog {
+    height: 200px;
+}
+
+#changelog .whitebox {
+    height: 150px;
+    overflow: auto;
+}

@@ -1,65 +1,56 @@
 ---
-layout: layouts/base.html
-title: "strife"
+layout: layouts/home.html
+title: home
 ---
 
-{% block sidebar %}
+<div id="welcome" class="box">
+    <div class="boxlabel">welcome</div>
+    <div class="boxcontent">
 
+        <p align="center">this site is a place for me to express myself as well as a creative outlet. while things are perpetually under construction, you're free to take a look around <img src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif" class="emote"></p>
 
-    
-{% endblock %}
+        <p align="center">i'll be blogging and making pages centered around my interests and hobbies, and really whatever comes to mind that i feel like adding <img src="https://nukochannel.neocities.org/NukoImg/Reactions/Happy/nukoJoy.gif" class="emote"></p>
 
-<h1>
-    <img src="https://nukochannel.neocities.org/NukoImg/Activities/Daily%20life/nukoBroom2.gif" class="emote">
-    welcome to my site
-    <img src="https://nukochannel.neocities.org/NukoImg/Activities/Daily%20life/nukoCarryBox.gif" class="emote">
-</h1>
-
-<div id="statuscafe">
-    <div id="statuscafe-username" align="center"></div>
-    <div id="statuscafe-content" align="center"></div>
-</div>
-<script src="https://status.cafe/current-status.js?name=strife" defer></script>
-
-<p align="center">this site is a place for me to express myself as well as a creative outlet. while things are always gonna be under construction, you're free to take a look around <img src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif" class="emote"></p>
-
-<p align="center">i'll be blogging and making pages centered around my interests and hobbies, and really whatever comes to mind that i feel like adding <img src="https://nukochannel.neocities.org/NukoImg/Reactions/Happy/nukoJoy.gif" class="emote"></p>
-
-<p align="center">please keep in mind that i am an adult and might post mature or explicit content from time to time, though pages will be properly marked off as nsfw (🔞) where needed</p>
-
-<p align="center">this site is designed with desktop in mind, so things are going to look funky on mobile, but it should still work.</p>
-<p align="center">sign my guestbook while you're here!</p>
-
-<p align="center">
-    <a href="https://strife.atabook.org/" class="imgtxt">
-        <img src="/assets/images/graphics/book.png" alt="" height="110" class="center" style="padding-left:20px; padding-right:20px;">
-        <span>guestbook</span>
-    </a>
-</p>
-
-<div style="display:flex; justify-content: center;">
-    <div class="subdiv" style="aspect-ratio:1/1; width: 50%; padding-top:0px;">
-    
-        <p align="center"><b>current hyperfixation:</b></p>
-
-        <a href="javascript:void(0);" class="imgtxt2">
-            <img src="/assets/images/graphics/applejuice.png" alt="" class="center" width="50%">
-            <span>homestuck</span>
-        </a>
-    
-        <br>
+        <p align="center">please keep in mind that i am an adult and might post mature or explicit content from time to time, though pages will be properly marked off as nsfw (🔞) where needed</p>
+        
     </div>
 </div>
 
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(5) %}
-<h2>recent posts</h2>
+<div id="row2" class="flex">
+    <div id="hyperfixation" class="box">
+        <div class="boxlabel">hyperfixation</div>
+        <div id="hyperfixation-content" class="boxcontent">
+            
+            <a href="javascript:void(0)" class="imgtxt">
+                <img src="/assets/images/graphics/computer2.gif" alt="" class="center">
+                <span style="font-size:14px;">webdev (2025/08/04)</span>
+            </a>
 
-{% set postslist = collections.posts %}
-{% set postslistCounter = postsCount %}
-{% include "layouts/postslist.njk" %}
+        </div>
+    </div>
+    <div id="blogbox" class="box">
+            <div class="boxlabel">recent blog posts</div>
+            <div class="boxcontent">
+                <div class="whitebox">
+                    {% set postsCount = collections.posts | length %}
+                    {% set latestPostsCount = postsCount | min(3) %}
+                    {% set postslist = collections.posts %}
+                    {% set postslistCounter = postsCount %}
+                    {% include "layouts/postslist.njk" %}
+                    {% set morePosts = postsCount - 3 %}
+                    {% if morePosts > 0 %}
+                    <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog">the archive</a>.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+</div>
 
-{% set morePosts = postsCount - 5 %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog">the archive</a>.</p>
-{% endif %}
+<div id="changelog" class="box">
+    <div class="boxlabel">changelog</div>
+    <div class="boxcontent">
+        <div class="whitebox">
+            {% include "changelog.html" %}
+        </div>
+    </div>
+</div>

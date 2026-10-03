@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+    <div id="contentbox" class="box">
+
+        <div class="boxlabel">{{ title }}</div>
+
+        <div class="boxcontent">
+            
+            <main>
+                {{ content | safe }}
+            </main>
+
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.html
+layout: layouts/page.html
 permalink: /blog/tag/{{ tag | slugify }}/
 pagination: 
     data: collections
@@ -10,14 +10,10 @@ eleventyComputed:
     title: posts tagged with {{ tag }}
 ---
 
-<h1> tagged with {{ tag }} </h1>
-
-{% for post in collections[tag] %}
-
 <ul>
+{% for post in collections[tag] %}
     <li>
         <a href="{{ post.url }}">{{ post.data.title }}</a>
     </li>
-</ul>
-
 {% endfor %}
+</ul>

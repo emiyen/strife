@@ -1,50 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-	<head>
+    <head>
         {% include "basehead.html" %}
-        {% block head %}
-            
-        {% endblock %}
+        {% block head %} {% endblock %}
     </head>
 
-	<body>
+    <body>
 
-        <div class="container">
+        
+        
+        <div id="container" class="flex-column">
 
-            {% include "baseheader.html" %}
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">home</a></li> |
+                        <li><a href="/about">about</a></li> |
+                        <li><a href="/blog">blog</a></li> |
+                        <li><a href="/fic-recs">fic recs</a></li> |
+                        <li><a href="/guestbook">guestbook</a></li> |
+                        <li><a href="/resources">resources</a></li> |
+                        <li><a href="/links">links</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <!-- NAVIGATION BAR -->
-            {% include "basenavbar.html" %}
+            <div id="content" class="flex">
 
-            <div class="content">
-                <main>
-                    <!-- CONTENT -->
-                    
+                <!-- SIDEBAR -->
+                {% include "basesidebar.html" %}
+
+                <!-- MAIN CONTENT -->
+                <div id="main" class="flex-column">
                     {% block content %}
                         {{ content | safe }}
                     {% endblock %}
-                   
-                    <!-- CONTENT END-->
-                </main>
+                </div>
             </div>
-
-            <!-- SIDEBAR MARQUEE (VERTICAL) -->
-            {% include "basesidebar.html" %}
-
-            <!-- FOOTER MARQUEE (HORIZONTAL) -->
-            {% include "basefooter.html" %}
-
-        <!-- CONTAINER END -->
         </div>
-
-        <!-- SCRIPTS-->
-         <script src="/js/tooltip.js"></script>
-         {% block scripts %}
-            
-         {% endblock %}
     </body>
-
-    
-
 </html>
