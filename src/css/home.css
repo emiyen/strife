@@ -52,7 +52,16 @@
 
 #changelog .whitebox {
     display: flex;
-    flex-direction: column;
-    height: auto;
+    height: 100px;
+    width: 100%;
     overflow: auto;
+}
+
+.logLeft {
+    width: 25%;
+}
+
+.logRight {
+    width: 100%;
+    word-wrap: break-word;
 }
