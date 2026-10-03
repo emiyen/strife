@@ -143,6 +143,11 @@ nav li {
     drop-shadow(1px -1px 0 black)
     drop-shadow(-1px -1px 0 black);
 }
+
+.imgtxt:hover img {
+    transform: rotate(3deg);
+}
+
 .imgtxt:hover span, .imgtxt:focus span {
   opacity: 1;
 }
