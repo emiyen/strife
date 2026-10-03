@@ -6,12 +6,12 @@
 #hyperfixation {
     display: flex;
     flex-direction: column;
-    height: 190px;
-    width: 200px;
+    width: 20vw;
 }
 
 #hyperfixation-content img {
-    height: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 #hyperfixation-content {
@@ -19,16 +19,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
 }
 
 #blogcolumn {
     gap: 10px;
-    width: 70%;
+    width: 70vw;
 }
 
 #blogbox {
-    height: 190px;
+    height: auto;
 }
 
 #blogbox .whitebox {
