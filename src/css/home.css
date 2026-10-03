@@ -27,11 +27,17 @@
 }
 
 #blogbox {
+    display: flex;
+    flex-direction: column;
     height: auto;
 }
 
+#blogboxcontent {
+    background-color: rgb(0, 136, 255);
+}
+
 #blogbox .whitebox {
-    height: 80%;
+    height: 100%;
     overflow: auto;
 }
 
@@ -44,15 +50,13 @@
     margin-top: 3px;
 }
 
-#unknownbox {
-    height: 50%;
-}
-
 #changelog {
-    height: 200px;
+    height: 100%;
 }
 
 #changelog .whitebox {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     overflow: auto;
 }
