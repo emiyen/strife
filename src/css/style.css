@@ -251,3 +251,16 @@ ul.indent {
     filter: drop-shadow(4px 4px 0px #c2c2c2);
 }
 
+.hs {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 175%;
+}
+
+.dave {
+    color: #e00707;
+}
+
+.dirk {
+    color: #f2a400;
+}
