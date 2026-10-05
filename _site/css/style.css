@@ -106,6 +106,7 @@ nav {
     background: black;
     justify-content: center;
     font-family: 'IBM BIOS';
+    font-size: 14px;
     color: rgb(240, 239, 239);
 }
 
@@ -120,6 +121,7 @@ nav ul {
 
 nav li {
     display: inline;
+    margin: 10px;
 }
 
 .imgtxt {
