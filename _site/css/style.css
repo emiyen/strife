@@ -258,6 +258,10 @@ ul.indent {
     filter: drop-shadow(4px 4px 0px #c2c2c2);
 }
 
+.emote {
+    max-height: 14px;
+}
+
 .hs {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
