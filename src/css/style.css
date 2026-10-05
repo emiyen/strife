@@ -195,20 +195,24 @@ nav li {
 }
 
 #content {
-    width: 80vw;
-    max-width: 900px;
+    width: 75vw;
     gap: 10px;
 }
 
 /* LEFT SIDE */
 #side {
-    width:35%;
+    width:21vw;
+    gap: 10px
+}
+
+#side2 {
+    width:21vw;
     gap: 10px
 }
 
 #main {
     gap: 10px;
-    width:100%;
+    width:75vw;
 }
 
 ul.taglist {
