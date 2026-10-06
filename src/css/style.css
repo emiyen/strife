@@ -280,6 +280,12 @@ ul.indent {
     color: #5d7c60;
 }
 
+.hotlink {
+    resize: none;
+    height: 100px;
+    color:#6e6e6e;
+}
+
 .tooltip {
     position: absolute;
     width: 140px;
