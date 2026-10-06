@@ -7,10 +7,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addPassthroughCopy("src/**/*.css");
+    eleventyConfig.addPassthroughCopy("src/**/*.js");
     eleventyConfig.addPassthroughCopy("src/**/*.png");
 
     eleventyConfig.addWatchTarget("src/css/");
     eleventyConfig.addWatchTarget("src/assets/");
+    eleventyConfig.addWatchTarget("src/scripts/");
 
     eleventyConfig.addCollection('posts', function(collectionApi) {
         return collectionApi.getFilteredByGlob([ 'src/blog/**/*.html', 'src/blog/**/*.md' ]);

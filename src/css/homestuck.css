@@ -131,6 +131,17 @@ ol {
 .imgtxt:hover img, .imgtxt:focus img {
   /* add hover effects like transform or filter to your images here! */
   transform: rotate(3deg);
-}
-	
+}	
 
+.tooltip {
+    position: absolute;
+    min-width: 140px;
+    max-width: 500px;
+    width: auto;
+    padding: 15px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    text-align: center;
+    overflow: hidden;
+}

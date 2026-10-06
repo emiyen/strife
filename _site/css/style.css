@@ -279,3 +279,14 @@ ul.indent {
 .liddle {
     color: #5d7c60;
 }
+
+.tooltip {
+    position: absolute;
+    width: 140px;
+    padding: 15px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    text-align: center;
+    overflow: hidden;
+}
