@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>POSTS TAGGED WITH &quot;posts&quot;</title>
+<title>GUESTBOOK</title>
 
 <link rel="stylesheet" href="https://unpkg.com/98.css">
 <link rel="stylesheet" href="/css/style.css" />
@@ -78,31 +78,59 @@
 
     <div id="contentbox" class="box">
 
-        <div class="boxlabel" style="text-align:center;">POSTS TAGGED WITH &quot;posts&quot;</div>
+        <div class="boxlabel" style="text-align:center;">GUESTBOOK</div>
 
         <div class="boxcontent">
             
             <main>
                 
-<ul>
+<!-- Guestbook Script -->
+<script defer src="https://guestbooks.meadow.cafe/resources/js/embed_script/851/script.js"></script>
+<!-- Guestbook Form -->
+<div id="guestbooks___guestbook-form-container">
+  <form id="guestbooks___guestbook-form" 
+        action="https://guestbooks.meadow.cafe/guestbook/851/submit" 
+        method="post">
+    <div class="guestbooks___input-container">
+      <label for="name">Name</label>
+      <input type="text" 
+             id="name" 
+             name="name" 
+             placeholder="Your Name" 
+             required>
+    </div>
+    <br>
 
-    <li>
-        <a href="/blog/20261002/"><time class="postlist-date" datetime="2026/10/02 | 11:46 PM">2026/10/02</time> » site overhaul</a>
-    </li>
-
-    <li>
-        <a href="/blog/20261004/"><time class="postlist-date" datetime="2026/10/04 | 10:16 PM">2026/10/04</time> » i love observing people. &amp; other thoughts</a>
-    </li>
-
-    <li>
-        <a href="/blog/shroom-trip-report-1/"><time class="postlist-date" datetime="2026/10/05 | 11:07 AM">2026/10/05</time> » shroom trip report 1</a>
-    </li>
-
-    <li>
-        <a href="/blog/20261006/"><time class="postlist-date" datetime="2026/10/06 | 12:08 AM">2026/10/06</time> » a reflection on dirk strider</a>
-    </li>
-
-</ul>
+    <div class="guestbooks___input-container">
+      <label for="website">Site</label>
+      <input type="url" 
+             id="website" 
+             name="website" 
+             placeholder="Website (optional)">
+    </div>
+    <br>
+    
+    <div id="guestbooks___challenge-answer-container"></div>
+    <div class="guestbooks___input-container">
+      <label for="text">Message</label>
+      <textarea id="text" 
+                name="text" 
+                placeholder="Leave your message here..." 
+                rows="4"
+                style="width: 100%; box-sizing: border-box; resize: vertical;"
+                required></textarea>
+    </div>
+    <br>
+    
+    <div id="guestbooks___pow-status"></div>
+    <button type="submit" class="center">Sign Guestbook</button>
+    <div id="guestbooks___error-message"></div>
+  </form>
+</div>
+<!-- Messages Section -->
+<hr style="margin: 2em 0;"/>
+<h3 id="guestbooks___guestbook-messages-header">Messages</h3>
+<div id="guestbooks___guestbook-messages-container"></div>
             </main>
 
         </div>

@@ -283,6 +283,7 @@ ul.indent {
 .hotlink {
     resize: none;
     height: 100px;
+    width: 10vw;
     color:#6e6e6e;
 }
 
