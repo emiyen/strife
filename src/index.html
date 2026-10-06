@@ -38,11 +38,11 @@ title: "HOME"
             <div id="blogboxcontent" class="boxcontent">
                 <div class="whitebox">
                     {% set postsCount = collections.posts | length %}
-                    {% set latestPostsCount = postsCount | min(3) %}
+                    {% set latestPostsCount = postsCount | min(5) %}
                     {% set postslist = collections.posts %}
                     {% set postslistCounter = postsCount %}
                     {% include "layouts/postslist.njk" %}
-                    {% set morePosts = postsCount - 3 %}
+                    {% set morePosts = postsCount - 5 %}
                     {% if morePosts > 0 %}
                     <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog">the archive</a>.</p>
                     {% endif %}
