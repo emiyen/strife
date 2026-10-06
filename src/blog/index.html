@@ -4,9 +4,9 @@ title: "BLOG"
 eleventyExcludeFromCollections: true
 ---
 
-<p>this is where i dump my thoughts when i don't have anywhere else to put them.</p>
+<p align="center">this is where i dump my thoughts when i don't have anywhere else to put them. i'll be writing about all sorts of things, but primarily about my media interests. maybe even some things on my "feelings."</p>
 
-<ul>
+<ul style="list-style: none;;">
     {% for post in collections.posts %}
     <li>
         <a href="{{ post.url }}"><time class="postlist-date" datetime="{{ post.date | formatDate }}">{{ post.date | formatDate2 }}</time> » {{ post.data.title }}</a>

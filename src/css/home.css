@@ -59,6 +59,7 @@
 
 .logLeft {
     width: 25%;
+    word-wrap: break-word;
 }
 
 .logRight {
