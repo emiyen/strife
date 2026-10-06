@@ -198,18 +198,18 @@ nav li {
 }
 
 #content {
-    width: 75vw;
+    width: 80vw;
     gap: 10px;
 }
 
 /* LEFT SIDE */
 #side {
-    width:21vw;
+    width:25vw;
     gap: 10px
 }
 
 #side2 {
-    width:21vw;
+    width:25vw;
     gap: 10px
 }
 
