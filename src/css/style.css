@@ -117,6 +117,7 @@ a {
 a:hover {
     color: #e00707;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 header {
