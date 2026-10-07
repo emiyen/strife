@@ -337,3 +337,7 @@ ul.indent {
 textarea {
     cursor: url("/cursor.png"), progress !important;
 }
+
+#follow {
+    margin-top: 10px;
+}
