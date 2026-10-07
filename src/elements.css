@@ -17,7 +17,7 @@
 .site-box {
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
-    color: #e00707;
+    color: #f2a400;
     text-align: center;
     background-color: #000000;
     background-image: none; 
@@ -28,17 +28,17 @@
     transform: scale(1.05);
 }
 
-/* SITE TITLE */
+/* SITE URL */
 .site-box > a > p {
-    color: #e00707;
+    color: #f2a400;
     font-weight: bold;
     top: -140px;
     right:-10px;
 }
 
-/* HOME */
+/* INDEX TITLE */
 .site-box > a > span {
-    color: #e00707;
+    color: #f2a400;
     top: 0px;
     display: none;
 }
