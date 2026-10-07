@@ -247,7 +247,7 @@ nav li {
 
 #main {
     gap: 10px;
-    width:75vw;
+    width: 75vw;
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
