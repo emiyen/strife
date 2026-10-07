@@ -87,3 +87,30 @@
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
+/* FOLLOW / FOLLOWING BUTTON */
+.follow {
+    color: #f2a400;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: black;  
+}
+
+.follow::hover {
+    color: #e00707;
+    cursor: url("/cursor.png"), progress !important;
+    border: 2px solid #e00707;
+}
+
+.following {
+    color: #f2a400;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: black;
+}
+
+.following::hover {
+    color: #e00707;
+    cursor: url("/cursor.png"), progress !important;
+    border: 2px solid #e00707;
+}

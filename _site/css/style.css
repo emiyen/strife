@@ -337,26 +337,3 @@ ul.indent {
 textarea {
     cursor: url("/cursor.png"), progress !important;
 }
-
-#follow {
-
-}
-
-.follow {
-    color: #f2a400;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    background-color: black;  
-}
-
-.follow::hover {
-    cursor: url("/cursor.png"), progress !important;
-}
-
-.following {
-
-}
-
-.following::hover {
-    
-}
