@@ -28,12 +28,17 @@
 /* Style for your post box (must start with ".post-box") */
 .post-box {
     font-family: 'Pixellated MS Sans Serif';
-    color: #e00707;
+    color: #f2a400;
     background-color: #000000;
-    border: 2px solid white;
+    border: 2px solid #f2a400;
     padding: 10px;
     border-radius: 0px;
     font-weight: normal;
+}
+
+.post-box:hover {
+    border: 2px solid #e00707;
+    color: #e00707;
 }
 
 .post-box .post-description {
@@ -44,7 +49,6 @@
 
 .post-box .post-title {
     padding: 3px;
-    color: #e00707;
     font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
