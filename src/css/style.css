@@ -62,6 +62,7 @@ body {
     margin: 0 auto;
     display: block;
     max-height: 100vh;
+    cursor: url("/cursor.png"), default;
 }
 
 h1 {
@@ -118,6 +119,7 @@ a:hover {
     color: #e00707;
     text-decoration: underline;
     font-weight: 700;
+    cursor: url("/cursor.png"), default;
 }
 
 header {
