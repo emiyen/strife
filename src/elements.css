@@ -92,7 +92,6 @@
 .follow {
     color: #f2a400;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
     background-color: black;  
     border: none;
     border-radius: 0px;
@@ -101,7 +100,6 @@
 .following {
     color: #f2a400;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
     background-color: black;
     border: none;
     border-radius: 0px;
