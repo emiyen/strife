@@ -346,8 +346,7 @@ textarea {
     color: #f2a400;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    background-color: black;
-    
+    background-color: black;  
 }
 
 .follow::hover {
