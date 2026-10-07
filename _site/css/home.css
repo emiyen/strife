@@ -42,28 +42,43 @@
     padding-left: 0px;
 }
 
+.postlist li {
+    margin: 10px;
+}
+
 .postlist:first-child {
     margin-top: 3px;
 }
 
 #changelog {
-    height: 100%;
+    height: 300px;
 }
 
 #changelog .whitebox {
     display: flex;
-    height: 110px;
+    height: 150px;
     width: 100%;
     overflow: auto;
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 .logLeft {
     width: 25%;
     word-wrap: break-word;
+    padding: 10px;
 }
 
 .logRight {
     width: 100%;
     word-wrap: break-word;
+    padding: 10px;
+}
+
+.changelog-entry {
+    width: 100%;
+}
+
+.changelog-entry:hover {
+    background-color: rgb(245, 242, 242);
 }
