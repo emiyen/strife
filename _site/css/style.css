@@ -31,7 +31,9 @@ body {
     font-family: 'Pixellated MS Sans Serif';
     font-size: 14px;
     -webkit-font-smoothing: none;
-    background-color: rgb(203, 201, 205);
+    background-color: rgb(152, 151, 154);
+    background-image: url("/assets/images/backgrounds/lohac.webp");
+    background-size:cover;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -191,10 +193,11 @@ nav li {
 
 /* THE WHOLE THANG */
 #container {
-    padding: 10px;
+    padding: 0px;
     gap: 10px;
     margin: 0 auto;
     align-items: center;
+    width: auto;
 }
 
 #content {
@@ -297,4 +300,3 @@ ul.indent {
     text-align: center;
     overflow: hidden;
 }
-

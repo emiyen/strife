@@ -23,10 +23,10 @@ const post_url = "https://social.nekoweb.org/post/?id=";
                     </p>
                 </div>
                 <div class="boxcontent">
-                    <div class="flex-wrap" style="gap:5px;">
-                        <a href="${profile_url + username}"><img id="nekocafe-pfp" src=${json["image"]} height=auto;" style="min-width: 15px; width: 100%; max-width:50px;"></a>
+                    <div class="flex" style="gap:5px;">
+                        <a href="${profile_url + username}"><img id="nekocafe-pfp" src=${json["image"]} height=auto;" style="min-width: 50px; width: 100%; max-width:50px;"></a>
                         
-                        <div class="flex-column" style="gap:5px; max-width:75%;">
+                        <div class="flex-column" style="gap:5px; max-width:75%; overflow: hidden;">
 
                             <div class="flex" style="gap:10px;">
 
@@ -34,7 +34,7 @@ const post_url = "https://social.nekoweb.org/post/?id=";
 
                             </div>
 
-                            <p id="nekocafe-text" style="margin:0px; word-wrap: break-word;><a href="${post_url + json["id"]}">${json["post"]}</a></p>
+                            <p id="nekocafe-text" style="margin:0px; text-wrap: pretty;><a href="${post_url + json["id"]}">${json["post"]}</a></p>
 
                         </div>
                     </div>
