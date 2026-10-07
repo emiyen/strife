@@ -341,3 +341,23 @@ textarea {
 #follow {
     margin-top: 10px;
 }
+
+.follow {
+    color: #f2a400;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: black;
+    
+}
+
+.follow::hover {
+    cursor: url("/cursor.png"), progress !important;
+}
+
+.following {
+
+}
+
+.following::hover {
+    
+}
