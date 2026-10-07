@@ -10,11 +10,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/**/*.js");
     eleventyConfig.addPassthroughCopy("src/**/*.png");
     eleventyConfig.addPassthroughCopy("src/*.xml");
+    eleventyConfig.addPassthroughCopy("src/*.htaccess");
 
     eleventyConfig.addWatchTarget("src/css/");
     eleventyConfig.addWatchTarget("src/assets/");
     eleventyConfig.addWatchTarget("src/scripts/");
     eleventyConfig.addWatchTarget("src/feed/");
+    eleventyConfig.addWatchTarget("src/*.htaccess");
 
     eleventyConfig.addCollection('posts', function(collectionApi) {
         return collectionApi.getFilteredByGlob([ 'src/blog/**/*.html', 'src/blog/**/*.md' ]);
