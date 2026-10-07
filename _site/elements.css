@@ -5,29 +5,53 @@
 */
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+.site-box::before {
+  content: url();
+}
+
+.site-box .screenshot {
+    top: 10px;
+}
+
+.site-box .site-feature {
+    top: 10px;
+}
+
 .site-box {
-    text-align: center;
-    background-image: url(/assets/cookiebox.png); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
-    background-repeat: no-repeat;
-    color: #b08271;
     font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e00707;
+    text-align: center;
+    background-color: #000000;
+    background-image: none; 
+    
 }
+
+.site-box:hover {
+    transform: scale(1.05);
+}
+
+/* SITE TITLE */
 .site-box > a > p {
-    color: var(--darkbrown);
+    color: #e00707;
     font-weight: bold;
+    top: -160px;
 }
+
+/* HOME */
 .site-box > a > span {
-    color: var(--darkbrown);
+    color: #e00707;
+    top: -160px;
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
-.follow {
-
+.site-box .follow {
+    padding: 0px;
 }
 
+/* POST BOX!!!!!! */
 /* Style for your post box (must start with ".post-box") */
 .post-box {
-    font-family: 'Pixellated MS Sans Serif';
     color: #f2a400;
     background-color: #000000;
     border: 2px solid #f2a400;
@@ -37,7 +61,6 @@
 }
 
 .post-box:hover {
-    border: 2px solid #e00707;
     color: #e00707;
 }
 
@@ -49,7 +72,9 @@
 
 .post-box .post-title {
     padding: 3px;
-    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 0px;
