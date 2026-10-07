@@ -52,9 +52,10 @@
 
 #changelog .whitebox {
     display: flex;
-    height: 100px;
+    height: 110px;
     width: 100%;
     overflow: auto;
+    margin-bottom: 0px;
 }
 
 .logLeft {
