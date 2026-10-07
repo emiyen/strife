@@ -17,8 +17,8 @@ const post_url = "https://social.nekoweb.org/post/?id=";
         
         div.innerHTML = `
             <div class="box">
-                <div class="boxlabel">
-                    <p align="center" id="nekocafe-time" style="margin:3px; font-size:14px;">
+                <div class="boxlabel dirk">
+                    <p align="center" id="nekocafe-time" style="margin:3px; font-size:14px; font-family:'Courier New', Courier, monospace; font-weight: 700;">
                         ${time}
                     </p>
                 </div>

@@ -23,6 +23,10 @@
     src: url('/assets/fonts/W95font.otf');
 }
 
+html {
+    cursor: url("/cursor.png"), progress !important;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -62,7 +66,6 @@ body {
     margin: 0 auto;
     display: block;
     max-height: 100vh;
-    cursor: url("/cursor.png"), default;
 }
 
 h1 {
@@ -119,7 +122,7 @@ a:hover {
     color: #e00707;
     text-decoration: underline;
     font-weight: 700;
-    cursor: url("/cursor.png"), default;
+    cursor: url("/cursor.png"), progress !important;
 }
 
 header {
@@ -329,4 +332,8 @@ ul.indent {
     border-radius: 0px;
     text-align: center;
     overflow: hidden;
+}
+
+textarea {
+    cursor: url("/cursor.png"), progress !important;
 }
