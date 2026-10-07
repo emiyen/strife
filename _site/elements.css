@@ -94,12 +94,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     background-color: black;  
-}
-
-.follow::hover {
-    color: #e00707;
-    cursor: url("/cursor.png"), progress !important;
-    border: 2px solid #e00707;
+    border: none;
+    border-radius: 0px;
 }
 
 .following {
@@ -107,10 +103,6 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     background-color: black;
-}
-
-.following::hover {
-    color: #e00707;
-    cursor: url("/cursor.png"), progress !important;
-    border: 2px solid #e00707;
+    border: none;
+    border-radius: 0px;
 }
