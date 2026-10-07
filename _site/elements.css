@@ -6,15 +6,12 @@
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
 .site-box::before {
-  content: url();
+
 }
 
-.site-box .screenshot {
-    top: 10px;
-}
-
-.site-box .site-feature {
-    top: 10px;
+.site-box .sitefeature {
+    top:25px;
+    
 }
 
 .site-box {
@@ -35,21 +32,32 @@
 .site-box > a > p {
     color: #e00707;
     font-weight: bold;
-    top: -160px;
+    top: -140px;
+    right:-10px;
 }
 
 /* HOME */
 .site-box > a > span {
     color: #e00707;
-    top: -160px;
+    top: 0px;
+    display: none;
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .site-box .follow {
+    content: url(https://strife.nekoweb.org/strife.nekoweb.org/assets/images/pixels/candycorn.gif);
     padding: 0px;
+    top:155px;
+    right:-20px
 }
 
 /* POST BOX!!!!!! */
+
+
+
+
+
+
 /* Style for your post box (must start with ".post-box") */
 .post-box {
     color: #f2a400;
