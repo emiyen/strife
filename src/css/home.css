@@ -1,4 +1,7 @@
 #row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 10px;
     width:100%;
 }
@@ -6,7 +9,7 @@
 #hyperfixation {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    max-width: 15vw;
 }
 
 #hyperfixation-content img {
@@ -21,15 +24,10 @@
     justify-content: center;
 }
 
-#blogcolumn {
-    gap: 10px;
-    width: 70vw;
-}
-
 #blogbox {
+    width: auto;
     display: flex;
     flex-direction: column;
-    height: auto;
 }
 
 #blogbox .whitebox {
@@ -51,13 +49,14 @@
 }
 
 #changelog {
-    height: 300px;
+    height: 100%;
+    width: auto;
 }
 
 #changelog .whitebox {
     display: flex;
-    height: 150px;
-    width: 100%;
+    height: 200px;
+    width: auto;
     overflow: auto;
     margin-bottom: 0px;
     padding: 0px;
@@ -81,4 +80,14 @@
 
 .changelog-entry:hover {
     background-color: rgb(245, 242, 242);
+}
+
+@media screen and (max-width: 800px) {
+    #row2 {
+        flex-wrap: wrap;
+    }
+
+    #hyperfixation {
+        min-width: 30vw;
+    }
 }

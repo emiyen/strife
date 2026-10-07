@@ -11,6 +11,7 @@
 <!-- CSS -->
 <link rel="stylesheet" href="https://unpkg.com/98.css">
 <link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- EMBED -->
 <meta content="STRIFE" property="og:title" />
@@ -23,6 +24,16 @@
 <!-- SCRIPT -->
 <script src="/scripts/nekocafe.js"></script>
 <script src="https://u.widget.st/ar.js"></script>
+<script>
+    function openMenu() {
+        var x = document.getElementById("navlinks-mobile");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+} 
+</script>
         
 <link rel="stylesheet" href="/css/home.css" />
 
@@ -44,6 +55,28 @@
             <li><a href="/links">LINKS</a></li>
         </ul>
     </nav>
+
+    <nav id="navbar-mobile">
+        <div class="flex" style="gap:10px; align-items: center;">
+            <a href="/index.html" class="logo"><img src="/assets/images/pixels/brokenrecord.ico" style="height: 20px;"></a>
+            <a href="/index.html">STRIFE.NEKOWEB.ORG</a>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="navlinks-mobile">
+            <a href="/about">ABOUT</a>
+            <a href="/blog">BLOG</a>
+            <a href="/fic-recs">FIC RECS</a>
+            <a href="/guestbook">GUESTBOOK</a>
+            <a href="/resources">RESOURCES</a>
+            <a href="/links">LINKS</a>
+        </div>
+
+        
+
+    </nav>
+
 </header>
 
             <div id="content" class="flex">
@@ -109,7 +142,7 @@
     </div>
 </div>
 
-<div id="row2" class="flex">
+<div id="row2">
     <div id="hyperfixation" class="box">
         <div class="boxlabel">hyperfixation</div>
         <div id="hyperfixation-content" class="boxcontent">
@@ -182,7 +215,7 @@
 
 <div id="changelog" class="box">
     <div class="boxlabel">changelog</div>
-    <div class="boxcontent">
+    <div id="changelogboxcontent" class="boxcontent">
         <div class="whitebox changelog-whitebox">
             <!-- 
  <table class="changelog-table" style="font-size:13px;">

@@ -65,7 +65,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     display: block;
-    max-height: 100vh;
 }
 
 h1 {
@@ -140,16 +139,16 @@ nav {
     color: rgb(240, 239, 239);
 }
 
-nav a {
+#navbar a {
     color: rgb(240, 239, 239);
 }
 
-nav ul {
+#navbar ul {
     list-style: none;
     padding: 0px;
 }
 
-nav li {
+#navbar li {
     display: inline;
     margin: 10px;
 }
@@ -225,7 +224,7 @@ nav li {
     gap: 10px;
     margin: 0 auto;
     align-items: center;
-    width: auto;
+    width: 100%;
 }
 
 #content {
@@ -236,12 +235,12 @@ nav li {
 
 /* LEFT SIDE */
 #side {
-    width:25vw;
+    max-width: 200px;
     gap: 10px;
 }
 
 #side2 {
-    width:25vw;
+    max-width: 200px;
     gap: 10px;
 }
 
@@ -253,6 +252,76 @@ nav li {
     overflow-x: hidden;
     scrollbar-color: black; 
 }
+
+#row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #side {
+        display: none;
+    }
+
+    #side2 {
+        display: none;
+    }
+
+    #main {
+        margin: 0 auto;
+    }
+
+    #row2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar-mobile {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        padding: 10px;
+    }
+
+    #navlinks-mobile {
+        display: none;
+    }
+
+    #navbar-mobile a {
+        color: white;
+        display: block;
+    }
+
+    #navlinks-mobile a {
+        padding: 10px;
+        text-align:center;
+    }
+
+    #navbar-mobile a.icon {
+        background: black;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+    }
+
+    #logo {
+        color: white;
+        padding: 0px;
+    }
+
+}
+
 
 ul.taglist {
     display: inline;
