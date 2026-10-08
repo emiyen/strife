@@ -23,7 +23,7 @@ const post_url = "https://social.nekoweb.org/post/?id=";
                     </p>
                 </div>
                 <div class="boxcontent">
-                    <div class="flex" style="gap:5px;">
+                    <div class="flex" style="gap:10px;">
                         <a href="${profile_url + username}"><img id="nekocafe-pfp" src=${json["image"]} height=auto;" style="min-width: 50px; width: 100%; max-width:50px;"></a>
                         
                         <div class="flex-column" style="gap:5px; max-width:75%; overflow: hidden;">
