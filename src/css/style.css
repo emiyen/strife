@@ -432,3 +432,7 @@ textarea {
 sup {
     line-height: 0;
 }
+
+hr {
+    border: 0.5px solid black;
+}
