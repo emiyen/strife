@@ -253,6 +253,10 @@ nav {
     scrollbar-color: black; 
 }
 
+#main .boxcontent {
+    padding: 20px;
+}
+
 #row2 {
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +398,7 @@ ul.indent {
 
 .tooltip {
     position: absolute;
-    width: 140px;
+    width: 250px;
     padding: 15px 10px;
     background-color: black;
     color: white;
