@@ -13,6 +13,10 @@ body {
     background-color: #535353;
 }
 
+sup {
+    line-height: 175%;
+}
+
 #back-to-top a {
     position: fixed;
     right: 10px;
