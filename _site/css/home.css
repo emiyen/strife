@@ -33,6 +33,7 @@
 #blogbox .whitebox {
     height: 100%;
     overflow: auto;
+    padding: 2px;
 }
 
 .postlist {
@@ -59,7 +60,6 @@
     width: auto;
     overflow: auto;
     margin-bottom: 0px;
-    padding: 0px;
     padding: 2px;
 }
 
