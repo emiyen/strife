@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/**/*.css");
     eleventyConfig.addPassthroughCopy("src/**/*.js");
     eleventyConfig.addPassthroughCopy("src/**/*.png");
+    eleventyConfig.addPassthroughCopy("src/**/*.webp");
     eleventyConfig.addPassthroughCopy("src/*.xml");
     eleventyConfig.addPassthroughCopy("src/*.htaccess");
 
