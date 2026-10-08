@@ -413,7 +413,7 @@ textarea {
 .tree li::before {
 	content: " ";
 	position: absolute;
-	border-top: 1.5px solid black;
+	border-top: 1.5px dotted gray;
 	width: 30px;
 	top: 10px;
 	left: -10px;
@@ -421,7 +421,7 @@ textarea {
 .tree li::after {
 	content: " ";
 	position: absolute;
-	border-left: 1.5px solid black;
+	border-left: 1.5px dotted gray;
 	height: calc(100% + 10px);
 	top: 0;
 	left: -10px;
