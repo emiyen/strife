@@ -77,30 +77,6 @@ h3 {
     font-size: 16px;
 }
 
-/* GENERAL CLASSES */
-
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.center {
-    display: block;
-    margin: auto;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
 /* FORMATTING */
 
 ::selection {
@@ -194,7 +170,6 @@ nav {
 }
 
 #content {
-    width: 80vw;
     gap: 10px;
     margin: auto;
 }
@@ -232,10 +207,30 @@ nav {
     display: none;
 }
 
+/* GENERAL CLASSES */
 
+.flex {
+    display: flex;
+}
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
-    
+.center {
+    display: block;
+    margin: auto;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
 /* GENERAL STYLING */
 .box {
     width: 100%;
@@ -268,56 +263,6 @@ nav {
 .site-button:hover {
     transform: translateY(-2px);
     filter: drop-shadow(4px 4px 0px #c2c2c2);
-}
-
-/* THE WHOLE THANG */
-#container {
-    padding: 0px;
-    gap: 10px;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-}
-
-#content {
-    width: 80vw;
-    gap: 10px;
-    max-width: 1000px;
-}
-
-/* LEFT SIDE */
-#side1 {
-    width: 200px;
-    max-width: 200px;
-    min-width: 200px;
-    gap: 10px;
-}
-
-#side2 {
-    width: 200px;
-    max-width: 200px;
-    min-width: 200px;
-    gap: 10px;
-}
-
-#main {
-    gap: 10px;
-    width: 75vw;
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-color: black; 
-}
-
-#main .boxcontent {
-    padding: 20px;
-    padding-top: 10px;
-}
-
-#row2 {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #navbar-mobile {

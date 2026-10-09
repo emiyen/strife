@@ -11,10 +11,6 @@
   top: 60px;
 }
 
-.site-box::after {
-  
-}
-
 .site-box .sitefeature {
     top:25px;
     display: none;
