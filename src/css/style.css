@@ -234,7 +234,6 @@ nav {
 
 #content {
     width: 80vw;
-    max-width: 1000px;
     gap: 10px;
 }
 
@@ -243,24 +242,17 @@ nav {
     width: 200px;
     gap: 10px;
     position: fixed;
-    top: 50px;
 }
 
-#side2-positioner {
+#side-positioner {
     position: relative;
     top: 40px;
-}
-
-#side2 {
-    width: 200px;
-    gap: 10px;
-    position: fixed;
 }
 
 #main {
     gap: 10px;
     width: auto;
-    max-width: 580px;
+    max-width: 600px;
     margin-left: 210px;
     position: relative;
     top: 40px;
@@ -431,6 +423,9 @@ textarea {
     cursor: url("/cursor.png"), progress !important;
 }
 
+.map {
+    word-wrap: break-word;
+}
 .map ul { position: relative; list-style-type: none; margin: 0 0 10px 0; padding-right: 0; }
 .map ul ul { margin:  0 0 7px -5px; padding-right: 0; }
 .map li { position: relative; padding: 0 0 0 25px; line-height: 1.4; }
