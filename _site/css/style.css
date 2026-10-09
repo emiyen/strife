@@ -283,6 +283,7 @@ nav {
 #content {
     width: 80vw;
     gap: 10px;
+    max-width: 1000px;
 }
 
 /* LEFT SIDE */
