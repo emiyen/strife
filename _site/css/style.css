@@ -234,7 +234,7 @@ nav {
 }
 
 
-/* FOR MOBILE AND RESIZING*/
+/* FOR MOBILE AND RESIZING */
 @media screen and (max-width: 1000px) {
     #side1 {
         display: none;
@@ -246,7 +246,6 @@ nav {
 
     #main {
         margin: 0 auto;
-        top: 40px;
     }
 
     #row2 {
@@ -261,11 +260,14 @@ nav {
     #navbar-mobile {
         display: block;
         padding: 10px;
-        height: 50px;
+        height: auto;
     }
 
     #navlinks-mobile {
         display: none;
+        z-index: 1;
+        padding: 10px;
+        padding-bottom: 0px;
     }
 
     #navbar-mobile a {
