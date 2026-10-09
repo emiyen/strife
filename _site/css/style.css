@@ -238,25 +238,37 @@ nav {
     margin: 0 auto;
 }
 
-/* LEFT SIDE */
-#side {
+/* SIDEBARS */
+
+#side1-positioner {
+    position: relative;
+    top: 40px;
+}
+
+#side1 {
     width: 200px;
     gap: 10px;
     position: fixed;
 }
 
-#side-positioner {
+#side2-positioner {
     position: relative;
     top: 40px;
+}
+
+#side2 {
+    width: 200px;
+    gap: 10px;
+    position: fixed;
 }
 
 #main {
     gap: 10px;
     width: 75vw;
     max-width: 600px;
-    margin-left: 210px;
     position: relative;
     top: 40px;
+    margin-left: 200px;
 }
 
 #main .boxcontent {
@@ -274,7 +286,7 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-    #side {
+    #side1 {
         display: none;
     }
 
