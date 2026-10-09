@@ -202,17 +202,9 @@ nav {
 
 /* SIDEBARS */
 
-#side1-positioner {
-    top: 40px;
-}
-
 #side1 {
     width: 200px;
     gap: 10px;
-}
-
-#side2-positioner {
-    top: 40px;
 }
 
 #side2 {
@@ -268,7 +260,6 @@ nav {
 
     #navbar-mobile {
         display: block;
-        position: fixed;
         padding: 10px;
         height: 50px;
     }
