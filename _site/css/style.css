@@ -289,13 +289,17 @@ nav {
 }
 
 /* LEFT SIDE */
-#side {
+#side1 {
+    width: 200px;
     max-width: 200px;
+    min-width: 200px;
     gap: 10px;
 }
 
 #side2 {
+    width: 200px;
     max-width: 200px;
+    min-width: 200px;
     gap: 10px;
 }
 
