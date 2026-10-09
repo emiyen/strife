@@ -342,10 +342,6 @@ nav {
     cursor: url("/cursor.png"), progress !important;
 }
 
-<<<<<<< HEAD
-button:hover {
-    cursor: url("/cursor.png"), progress !important;
-=======
 /* THE WHOLE THANG */
 #container {
     padding: 0px;
@@ -353,6 +349,7 @@ button:hover {
     margin: 0 auto;
     align-items: center;
     width: 100%;
+    margin-top: 50px;
 }
 
 #content {
@@ -453,7 +450,6 @@ button:hover {
         padding: 0px;
     }
 
->>>>>>> parent of c57e76b (made background-attachment fixed, removed overflow on main)
 }
 
 .comicsans {
