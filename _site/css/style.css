@@ -187,41 +187,6 @@ nav {
 .imgtxt:hover span, .imgtxt:focus span {
   opacity: 1;
 }
-    
-/* GENERAL STYLING */
-.box {
-    width: 100%;
-    border: 2px solid black;
-    padding: 1px;
-    background-color: rgb(232, 228, 228);
-}
-
-.boxlabel {
-    width: 100%;
-    font-family: 'Pixellated MS Sans Serif';
-    font-size: 16px;
-    padding: 3px;
-    background-color: black;
-    color: rgb(240, 239, 239);
-}
-
-.boxcontent {
-    height: 100%;
-    padding: 10px;
-}
-
-.whitebox {
-    background-color: white;
-    box-shadow:inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.site-button:hover {
-    transform: translateY(-2px);
-    filter: drop-shadow(4px 4px 0px #c2c2c2);
-    cursor: pointer;
-}
 
 /* THE WHOLE THANG */
 #container {
@@ -229,6 +194,7 @@ nav {
     gap: 10px;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -348,9 +314,50 @@ nav {
 
 }
 
+    
+/* GENERAL STYLING */
+.box {
+    width: 100%;
+    border: 2px solid black;
+    padding: 1px;
+    background-color: rgb(232, 228, 228);
+}
+
+.boxlabel {
+    width: 100%;
+    font-family: 'Pixellated MS Sans Serif';
+    font-size: 16px;
+    padding: 3px;
+    background-color: black;
+    color: rgb(240, 239, 239);
+}
+
+.boxcontent {
+    height: 100%;
+    padding: 10px;
+}
+
+.whitebox {
+    background-color: white;
+    box-shadow:inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.site-button:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(4px 4px 0px #c2c2c2);
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: url("/cursor.png"), progress !important;
+}
+
 .comicsans {
     font-family: "Comic Sans MS";
 }
+
 
 ul.taglist {
     display: inline;
