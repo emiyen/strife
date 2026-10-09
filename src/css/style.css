@@ -322,6 +322,8 @@ nav {
     display: none;
 }
 
+
+/* FOR MOBILE AND RESIZING */
 @media screen and (max-width: 1000px) {
     #side1 {
         display: none;
@@ -346,17 +348,20 @@ nav {
 
     #navbar-mobile {
         display: block;
-        overflow: hidden;
-        position: relative;
         padding: 10px;
+        height: auto;
     }
 
     #navlinks-mobile {
         display: none;
+        z-index: 1;
+        padding: 10px;
+        padding-bottom: 0px;
     }
 
     #navbar-mobile a {
         color: white;
+        background-color: black;
         display: block;
     }
 
