@@ -94,3 +94,20 @@
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
+/* FOLLOW / FOLLOWING BUTTON */
+.follow {
+    color: #f2a400;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;  
+    border: none;
+    border-radius: 0px;
+}
+
+.following {
+    color: #f2a400;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+}
