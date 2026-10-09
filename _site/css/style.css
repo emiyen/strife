@@ -23,10 +23,6 @@
     src: url('/assets/fonts/W95font.otf');
 }
 
-html {
-    cursor: url("/cursor.png"), progress !important;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -49,6 +45,7 @@ html {
 
 * {
     box-sizing: border-box;
+    cursor: url("/cursor.png"), progress !important;
 }
 
 body {
@@ -64,7 +61,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
     display: block;
 }
 
@@ -95,8 +92,7 @@ h3 {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .align-items-center {
@@ -134,6 +130,7 @@ nav {
     width: 100%;
     border: 2px solid black;
     background: black;
+    align-items: center;
     justify-content: center;
     font-family: 'IBM BIOS';
     font-size: 14px;
@@ -192,49 +189,44 @@ nav {
 #container {
     padding: 0px;
     gap: 10px;
-    margin: 0 auto;
+    margin: auto;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
 }
 
 #content {
     width: 80vw;
     gap: 10px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* SIDEBARS */
 
 #side1-positioner {
-    position: relative;
     top: 40px;
 }
 
 #side1 {
     width: 200px;
     gap: 10px;
-    position: fixed;
 }
 
 #side2-positioner {
-    position: relative;
     top: 40px;
 }
 
 #side2 {
     width: 200px;
     gap: 10px;
-    position: fixed;
 }
 
 #main {
     gap: 10px;
     width: 75vw;
     max-width: 600px;
-    position: relative;
     top: 40px;
-    margin-left: 200px;
 }
 
 #main .boxcontent {
@@ -251,6 +243,8 @@ nav {
     display: none;
 }
 
+
+/* FOR MOBILE AND RESIZING*/
 @media screen and (max-width: 1000px) {
     #side1 {
         display: none;
@@ -263,7 +257,6 @@ nav {
     #main {
         margin: 0 auto;
         top: 40px;
-        position: relative;
     }
 
     #row2 {
