@@ -138,6 +138,10 @@ nav {
     font-family: 'IBM BIOS';
     font-size: 14px;
     color: rgb(240, 239, 239);
+    position: fixed;
+    top: 0;
+    height: 50px;
+    z-index: 1;
 }
 
 #navbar a {
@@ -238,17 +242,28 @@ nav {
 #side {
     max-width: 200px;
     gap: 10px;
+    position: fixed;
+    top: 50px;
+}
+
+#side2-positioner {
+    position: relative;
+    top: 40px;
 }
 
 #side2 {
     max-width: 200px;
     gap: 10px;
+    position: fixed;
 }
 
 #main {
     gap: 10px;
     width: 75vw;
-    max-height: 90vh;
+    max-width: 580px;
+    margin-left: 210px;
+    position: relative;
+    top: 40px;
 }
 
 #main .boxcontent {
@@ -265,7 +280,7 @@ nav {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #side {
         display: none;
     }
@@ -276,6 +291,7 @@ nav {
 
     #main {
         margin: 0 auto;
+        top: -10px;
     }
 
     #row2 {
@@ -292,6 +308,7 @@ nav {
         overflow: hidden;
         position: relative;
         padding: 10px;
+        height: 50px;
     }
 
     #navlinks-mobile {

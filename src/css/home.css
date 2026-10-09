@@ -83,7 +83,7 @@
     background-color: rgb(245, 242, 242);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #row2 {
         flex-wrap: wrap;
     }
