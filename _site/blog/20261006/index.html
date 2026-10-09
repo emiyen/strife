@@ -35,6 +35,16 @@
         }
 } 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+            $("#changeFont").click(function() {
+                $("*").toggleClass("comicsans");
+                // $("body").css("font-size", "24px");
+            });
+        });
+</script>
+
          
     </head>
 
@@ -234,12 +244,23 @@
     </div>
 
     <div class="box" style="height:auto;" >
-        <div align="center" class="boxlabel dave center" style="font-family:'Courier New', Courier, monospace; font-weight: 700;">
+        <div align="center" class="boxlabel dave" style="font-family:'Courier New', Courier, monospace; font-weight: 700;">
             calendar
         </div>
 
         <ws-widget type="calendar" iid="18744" height="200px"></ws-widget>
 
+    </div>
+
+    <div class="box" style="height: auto;">
+        <div align="center" class="boxlabel dave" style="font-family: 'Courier New', Courier, monospace; font-weight: 700;">
+            toggles
+        </div>
+
+        <div class="boxcontent">
+            <button id="changeFont" class="hs dave center">change font</button>
+            <p align="center">^ you'll have to toggle that every refresh if you want to stay on comic sans</p>
+        </div>
     </div>
 
     <!-- LINKBOX -->
