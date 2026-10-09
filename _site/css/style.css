@@ -55,7 +55,6 @@ body {
     background-color: rgb(152, 151, 154);
     background-image: url("/assets/images/backgrounds/lohac.webp");
     background-size: cover;
-    background-attachment: fixed;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -343,8 +342,118 @@ nav {
     cursor: url("/cursor.png"), progress !important;
 }
 
+<<<<<<< HEAD
 button:hover {
     cursor: url("/cursor.png"), progress !important;
+=======
+/* THE WHOLE THANG */
+#container {
+    padding: 0px;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+
+#content {
+    width: 80vw;
+    max-width: 1000px;
+    gap: 10px;
+}
+
+/* LEFT SIDE */
+#side {
+    max-width: 200px;
+    gap: 10px;
+}
+
+#side2 {
+    max-width: 200px;
+    gap: 10px;
+}
+
+#main {
+    gap: 10px;
+    width: 75vw;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: black; 
+}
+
+#main .boxcontent {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+#row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #side {
+        display: none;
+    }
+
+    #side2 {
+        display: none;
+    }
+
+    #main {
+        margin: 0 auto;
+    }
+
+    #row2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar-mobile {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        padding: 10px;
+    }
+
+    #navlinks-mobile {
+        display: none;
+    }
+
+    #navbar-mobile a {
+        color: white;
+        display: block;
+    }
+
+    #navlinks-mobile a {
+        padding: 10px;
+        text-align:center;
+    }
+
+    #navbar-mobile a.icon {
+        background: black;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+    }
+
+    #logo {
+        color: white;
+        padding: 0px;
+    }
+
+>>>>>>> parent of c57e76b (made background-attachment fixed, removed overflow on main)
 }
 
 .comicsans {
