@@ -116,7 +116,6 @@ a:hover {
     color: #e00707;
     text-decoration: underline;
     font-weight: 700;
-    cursor: url("/cursor.png"), progress !important;
 }
 
 header {
@@ -269,7 +268,6 @@ nav {
 .site-button:hover {
     transform: translateY(-2px);
     filter: drop-shadow(4px 4px 0px #c2c2c2);
-    cursor: url("/cursor.png"), progress !important;
 }
 
 /* THE WHOLE THANG */
@@ -476,10 +474,6 @@ ul.indent {
     border-radius: 0px;
     text-align: center;
     overflow: hidden;
-}
-
-textarea {
-    cursor: url("/cursor.png"), progress !important;
 }
 
 .map {
