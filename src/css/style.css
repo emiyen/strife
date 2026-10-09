@@ -240,7 +240,7 @@ nav {
 
 /* LEFT SIDE */
 #side {
-    max-width: 200px;
+    width: 200px;
     gap: 10px;
     position: fixed;
     top: 50px;
@@ -252,14 +252,14 @@ nav {
 }
 
 #side2 {
-    max-width: 200px;
+    width: 200px;
     gap: 10px;
     position: fixed;
 }
 
 #main {
     gap: 10px;
-    width: 75vw;
+    width: auto;
     max-width: 580px;
     margin-left: 210px;
     position: relative;
@@ -291,7 +291,8 @@ nav {
 
     #main {
         margin: 0 auto;
-        top: -10px;
+        top: 40px;
+        position: relative;
     }
 
     #row2 {
@@ -305,8 +306,7 @@ nav {
 
     #navbar-mobile {
         display: block;
-        overflow: hidden;
-        position: relative;
+        position: fixed;
         padding: 10px;
         height: 50px;
     }
@@ -317,6 +317,7 @@ nav {
 
     #navbar-mobile a {
         color: white;
+        background-color: black;
         display: block;
     }
 
