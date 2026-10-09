@@ -54,11 +54,10 @@ body {
     -webkit-font-smoothing: none;
     background-color: rgb(152, 151, 154);
     background-image: url("/assets/images/backgrounds/lohac.webp");
+    background-attachment: fixed;
     background-size: cover;
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin: auto;
     display: block;
