@@ -191,6 +191,8 @@ nav {
     width: 75vw;
     max-width: 600px;
     top: 40px;
+    overflow: auto;
+    height: 90vh;
 }
 
 #main .boxcontent {
@@ -402,6 +404,18 @@ ul.indent {
 
 .liddle {
     color: #5d7c60;
+}
+
+.rose {
+    color: #b536da;
+}
+
+.vriska {
+    color: #005682;
+}
+
+.june {
+    color: #0715cd;
 }
 
 .hotlink {
