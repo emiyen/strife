@@ -474,3 +474,26 @@ dt {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.piclogred-widget {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border: 2px outset black;
+}
+
+.piclogred-image {
+    width: 200px;
+}
+
+.piclogred-caption {
+    padding: 10px;
+}
+
+.piclogred-timeago {
+    background-color: black;
+    color: white;
+}
