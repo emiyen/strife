@@ -23,6 +23,11 @@
     src: url('/assets/fonts/W95font.otf');
 }
 
+@font-face {
+    font-family: 'RuneScape UF';
+    src: url('/assets/fonts/runescape_uf.ttf');
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
