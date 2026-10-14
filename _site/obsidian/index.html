@@ -81,6 +81,7 @@
             <a href="/resources">RESOURCES</a>
             <a href="/links">LINKS</a>
             <a href="/sitemap">SITEMAP</a>
+            <a id="clearCache" onclick="clearCache()">CLEAR CACHE</a>
         </div>
 
         
@@ -187,12 +188,12 @@
 
     <div class="box" style="height: auto;">
         <div align="center" class="boxlabel dave" style="font-family: 'Courier New', Courier, monospace; font-weight: 700;">
-            toggles
+            site settings
         </div>
 
-        <div class="boxcontent">
+        <div class="boxcontent" style="display: flex; flex-direction: column; gap:10px; height: auto;">
             <button id="changeFont" class="hs dave center">change font</button>
-            <p align="center">^ you'll have to toggle that every refresh if you want to stay on comic sans</p>
+            <button id="clearCache" class="hs dave center" onclick="clearCache()">clear cache</button>
         </div>
     </div>
 
@@ -229,6 +230,12 @@
         </div>
 
         <script src="/scripts/tooltip.js"></script>
+        <script>
+        let root = document.getElementById('clearCache')
+        function clearCache() {
+            window.location.reload(true)
+        }
+   </script>
 
     </body>
 </html>
