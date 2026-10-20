@@ -11,7 +11,7 @@ const post_url = "https://social.nekoweb.org/post/?id=";
         json = json[0]
 
         timestamp = json["timestamp"] * 1000
-        time = new Date(timestamp).toLocaleString();
+        time = new Date(timestamp).toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
     
         div = document.getElementById("nekocafe-status")
         
