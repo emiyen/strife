@@ -278,7 +278,7 @@ nav {
 
 
 /* FOR MOBILE AND RESIZING */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     #container {
         padding: 0px;
         width: 99vw;
@@ -520,6 +520,20 @@ dt {
     font-weight: 700;
     line-height: 175%;
     color: #e00707;
+}
+
+.ws-atabook label {
+    font-size: 14px;
+}
+
+.ws-atabook input {
+    font-size: 14px;
+    font-family: 'Pixellated MS Sans Serif' !important;
+}
+
+.ws-atabook textarea {
+    font-size: 14px;
+    font-family: 'Pixellated MS Sans Serif' !important;
 }
 
 .ws-atabook .reply {
