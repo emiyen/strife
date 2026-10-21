@@ -536,10 +536,15 @@ dt {
     font-family: 'Pixellated MS Sans Serif' !important;
 }
 
+.ws-atabook .message-text {
+    font-family: 'Pixellated MS Sans Serif';
+}
+
 .ws-atabook .reply {
     border: none !important;
     border-left: 2.5px solid black !important;
     padding-left: 10px !important;  
+    font-family: 'Pixellated MS Sans Serif';
 }
 
 .ws-atabook .reply .message-text {
@@ -547,4 +552,8 @@ dt {
     font-weight: 700;
     line-height: 175%;
     color: #e00707 !important;
+}
+
+.ws-atabook .split {
+    font-family: 'Pixellated MS Sans Serif' !important;
 }
