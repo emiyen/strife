@@ -278,7 +278,7 @@ nav {
 
 
 /* FOR MOBILE AND RESIZING */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     #container {
         padding: 0px;
         width: 99vw;
@@ -348,11 +348,12 @@ nav {
 }
 
 .comicsans {
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS" !important;
 }
 
 .largerFont {
     font-size: 125%;
+    font-weight: 700;
 }
 
 ul.taglist {
@@ -514,8 +515,22 @@ dt {
     padding: 0px !important;
 }
 
+.ws-atabook #description {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 175%;
+    color: #e00707;
+}
+
 .ws-atabook .reply {
     border: none !important;
     border-left: 2.5px solid black !important;
-    padding-left: 10px !important;
+    padding-left: 10px !important;  
+}
+
+.ws-atabook .reply .message-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 175%;
+    color: #e00707 !important;
 }
