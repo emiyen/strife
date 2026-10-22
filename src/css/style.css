@@ -561,3 +561,13 @@ dt {
 .ws-atabook .split {
     font-family: 'Pixellated MS Sans Serif' !important;
 }
+
+#statuscafe {
+    padding: 10px;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
