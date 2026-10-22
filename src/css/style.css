@@ -572,7 +572,6 @@ body .ws-atabook .reply {
 body .ws-atabook .reply .message-text {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    line-height: 175%;
     color: #e00707;
 }
 
