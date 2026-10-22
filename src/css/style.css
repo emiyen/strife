@@ -276,6 +276,12 @@ nav {
     display: none;
 }
 
+#mobile-status {
+    display: none;
+    max-width: 350px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
 
 /* FOR MOBILE AND RESIZING */
 @media screen and (max-width: 1000px) {
@@ -343,6 +349,10 @@ nav {
     #logo {
         color: white;
         padding: 0px;
+    }
+
+    #mobile-status {
+        display: block;
     }
 
 }
@@ -518,6 +528,20 @@ dt {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
+}
+
+body .status-widget {
+    font-family: 'Pixellated MS Sans Serif';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body .status-widget #username {
+    font-size: 14px;
+}
+
+body .status-widget #time {
+    font-size: 10px;
 }
 
 body .ws-atabook #body {
