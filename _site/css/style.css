@@ -361,8 +361,8 @@ nav {
     font-family: "Comic Sans MS" !important;
 }
 
-.largerFont {
-    font-size: 125%;
+nav .comicsans {
+    font-size: 17.5px;
     font-weight: 700;
 }
 
@@ -520,7 +520,7 @@ dt {
     color: white;
 }
 
-#statuscafe {
+/* #statuscafe {
     padding: 10px;
 }
 #statuscafe-username {
@@ -528,7 +528,7 @@ dt {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
-}
+} */
 
 body .status-widget {
     font-family: 'Pixellated MS Sans Serif';
@@ -540,8 +540,17 @@ body .status-widget #username {
     font-size: 14px;
 }
 
+body .status-widget .comicsans #username {
+    font-size: 12px;
+}
+
 body .status-widget #time {
     font-size: 10px;
+    white-space: nowrap;
+}
+
+body .status-widget .comicsans #text {
+    font-size: 12px;
 }
 
 body .ws-atabook #body {
