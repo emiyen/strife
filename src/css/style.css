@@ -510,58 +510,6 @@ dt {
     color: white;
 }
 
-.ws-atabook #body {
-    width: 100% !important;
-    padding: 0px !important;
-}
-
-.ws-atabook #description {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    line-height: 175%;
-    color: #e00707;
-}
-
-.ws-atabook label {
-    font-size: 14px;
-}
-
-.ws-atabook input {
-    font-size: 14px;
-    font-family: 'Pixellated MS Sans Serif' !important;
-}
-
-.ws-atabook textarea {
-    font-size: 14px;
-    font-family: 'Pixellated MS Sans Serif' !important;
-}
-
-.ws-atabook .avatar-row {
-    font-family: 'Pixellated MS Sans Serif' !important;
-}
-
-.ws-atabook .message-text {
-    font-family: 'Pixellated MS Sans Serif';
-}
-
-.ws-atabook .reply {
-    border: none !important;
-    border-left: 2.5px solid black !important;
-    padding-left: 10px !important;  
-    font-family: 'Pixellated MS Sans Serif';
-}
-
-.ws-atabook .reply .message-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    line-height: 175%;
-    color: #e00707 !important;
-}
-
-.ws-atabook .split {
-    font-family: 'Pixellated MS Sans Serif' !important;
-}
-
 #statuscafe {
     padding: 10px;
 }
@@ -570,4 +518,56 @@ dt {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
+}
+
+body .ws-atabook #body {
+    width: 100%;
+    padding: 0px;
+    font-family: 'Pixellated MS Sans Serif';
+    font-size: 14px;
+}
+
+body .ws-atabook #description {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 175%;
+    color: #e00707;
+}
+
+body .ws-atabook #site-url {
+    display: none;
+}
+
+body .ws-atabook label {
+    font-size: 14px;
+}
+
+body .ws-atabook input {
+    font-size: 14px;
+}
+
+body .ws-atabook .notify-reply {
+    font-size: 12px;
+}
+
+body .ws-atabook #ata-notify-reply {
+    opacity: 1;
+    position: relative;
+}
+
+body .ws-atabook textarea {
+    font-size: 14px;
+}
+
+body .ws-atabook .reply {
+    border: none;
+    border-left: 2.5px solid black;
+    padding-left: 10px; 
+}
+
+body .ws-atabook .reply .message-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    line-height: 175%;
+    color: #e00707;
 }
