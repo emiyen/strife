@@ -559,6 +559,10 @@ body .ws-atabook textarea {
     font-size: 14px;
 }
 
+body .ws-atabook .question {
+    display: none;
+}
+
 body .ws-atabook .reply {
     border: none;
     border-left: 2.5px solid black;
@@ -571,3 +575,4 @@ body .ws-atabook .reply .message-text {
     line-height: 175%;
     color: #e00707;
 }
+
