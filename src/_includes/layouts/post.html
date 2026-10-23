@@ -2,11 +2,34 @@
 
 {% block content %}
 
+    {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+
     <div id="blogpost" class="box">
 
-        <div class="boxlabel">{{page.date | formatDate}} » {{ title }}</div>
+        <div class="boxlabel flex">
+            {{page.date | formatDate}} » {{ title }}
+        </div>
 
         <div class="boxcontent">
+
+            <div id="postNav">
+                <div id="prevPost">
+                    {% if previousPost %}
+
+                        <a href="{{ previousPost.url }}">« prev post</a>
+
+                    {% endif %}
+                </div>
+            
+                <div id="nextPost">
+                    {% if nextPost %}
+
+                        <a href="{{ nextPost.url }}">next post »</a>
+
+                    {% endif %}
+                </div>
+            </div>
             
             <main>
                 {{ content | safe }}
@@ -34,3 +57,6 @@
     </div> -->
 
 {% endblock %}
+
+
+

@@ -620,3 +620,19 @@ body .ws-atabook .reply .message-text {
     color: #e00707;
 }
 
+#postNav {
+    display: flex;
+    width: 100%;
+}
+
+#prevPost {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+
+#nextPost {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}

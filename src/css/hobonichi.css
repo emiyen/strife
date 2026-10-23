@@ -23,7 +23,7 @@ body {
 
 header {
     display: flex;    
-    margin-bottom: var(--grid-size);
+    margin-bottom: 10px;
     font-size: 2rem;
     height: 1.8em;
     color: var(--month);
@@ -31,28 +31,9 @@ header {
 
 header div:nth-child(1) {
     font-size: 2em;
-    padding-right: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-header div:nth-child(2) {
-    border-left: 2px solid var(--month);
-    border-right: 2px solid var(--month);
-    padding: 0 3rem 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
-
-header div:nth-child(3) {
-    font-size: 1.5em;
-    border-left: 2px solid var(--month);
-    border-right: 2px solid var(--month);
-    padding: 0 0.5rem;
-    display: flex;
-    align-items: center;
 }
 
 .day {
@@ -67,11 +48,12 @@ header div:nth-child(3) {
 
 nav {
     padding-left: 1rem;
-    margin-bottom: -0.3em;
+    margin-bottom: 0px;
     font-size: 0.5em;
     display: flex;
     gap: 1em;
     width: 100%;
+    justify-content: right;
 }
 
 header nav {
@@ -167,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     font-size: 0.8em;
     text-align: center;
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 450px) {
