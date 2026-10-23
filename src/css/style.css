@@ -497,6 +497,18 @@ dt {
     padding-bottom: 10px;
 }
 
+#piclog {
+    width: auto;
+    height: auto;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#piclog img {
+    width: 100%;
+}
+
 .piclogred-widget {
     padding: 10px;
     margin-bottom: 20px;

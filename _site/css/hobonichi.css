@@ -1,0 +1,205 @@
+:root {
+    --bg: #f5f4eb;
+    --month: #3b3b3b;
+    --grid-color: #3b3b3b4d;
+
+    --grid-size: 1.5rem;
+    --grid-strength: 1px;
+    --grid-dash: 2px;
+    --grid-gap: 4px;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.box {
+    width: 75%;
+    min-width: 450px;
+    margin: var(--grid-size) auto;
+}
+
+header {
+    display: flex;    
+    margin-bottom: var(--grid-size);
+    font-size: 2rem;
+    height: 1.8em;
+    color: var(--month);
+}
+
+header div:nth-child(1) {
+    font-size: 2em;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header div:nth-child(2) {
+    border-left: 2px solid var(--month);
+    border-right: 2px solid var(--month);
+    padding: 0 3rem 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+header div:nth-child(3) {
+    font-size: 1.5em;
+    border-left: 2px solid var(--month);
+    border-right: 2px solid var(--month);
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.day {
+    margin: -0.5rem 0;
+    font-size: 0.8em;
+}
+
+.month {
+    margin: 0;
+    font-size: 0.5em;
+}
+
+nav {
+    padding-left: 1rem;
+    margin-bottom: -0.3em;
+    font-size: 0.5em;
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+header nav {
+    align-self: flex-end;
+}
+
+main {
+    min-height: 200px;
+    box-sizing: border-box;
+    line-height: var(--grid-size);
+    position: relative;
+    padding: 0.05px;
+}
+
+.grid {
+    /*code by Ferris https://stackoverflow.com/a/76142563 */
+    background-size: var(--grid-gap) var(--grid-gap), var(--grid-size) var(--grid-size);
+    background-image:
+        linear-gradient(to bottom, transparent var(--grid-dash), var(--bg) var(--grid-dash)),
+        linear-gradient(to right, var(--grid-color) var(--grid-strength), transparent var(--grid-strength)),
+        linear-gradient(to right, transparent var(--grid-dash), var(--bg) var(--grid-dash)),
+        linear-gradient(to bottom, var(--grid-color) var(--grid-strength), transparent var(--grid-strength));
+    border-right: 1px dashed var(--grid-color);
+}
+
+footer {
+    background-color: var(--bg);
+    padding-left: var(--grid-size);
+    color: var(--month);
+}
+
+a {
+    text-decoration: none;
+    color: var(--month);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--month);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+p {
+    margin: var(--grid-size);
+}
+
+details {
+    margin: var(--grid-size);
+    line-height: var(--grid-size);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: var(--grid-size);
+}
+
+.quote {
+    display: block;
+}
+
+.quote::before {
+    content: "——";
+}
+
+.accent {
+    position: absolute;
+    right: calc(-0.1rem - (var(--grid-size)));
+    bottom: calc((var(--grid-size)) * 12);
+    background-color: var(--month);
+    color: var(--bg);
+    font-size: 1.5rem;
+    height: calc(2 * var(--grid-size));
+    width: calc(2 * var(--grid-size));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit {
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+        header {
+        flex-wrap:wrap;
+        height: fit-content;
+            row-gap: 0.4em;
+    }
+
+    header div:nth-child(1) {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    header div {
+        max-height: 2em;
+    }
+
+    header nav {
+        padding-left: 0;
+    }
+
+    .box {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.5em;
+    }
+
+    .accent {
+        display: none;
+    }
+}
