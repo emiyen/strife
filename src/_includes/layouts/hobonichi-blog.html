@@ -30,6 +30,10 @@
     -->
 
     <body>
+
+        {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+        {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+
         <div class="box">
                 <header>
                     <!-- current date -->
@@ -38,10 +42,10 @@
                     </div>
 
                     <nav>
-                        <a href="">prev</a>
+                        <a href="{{ previousPost.url }}">prev</a>
                         <a href="/index.html">home</a>
-                        <a href="/journal/">journal index</a>
-                        <a href="">next</a>
+                        <a href="/blog/">blog index</a>
+                        <a href="{{ nextPost.url }}">next</a>
                     </nav>
                 </header>
 
