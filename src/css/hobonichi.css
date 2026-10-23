@@ -1,7 +1,7 @@
 :root {
     --bg: #f5f4eb;
-    --month: #3b3b3b;
-    --grid-color: #3b3b3b4d;
+    --month: #f28d9d;
+    --grid-color: #f28d9e8f;
 
     --grid-size: 1.5rem;
     --grid-strength: 1px;
@@ -30,10 +30,20 @@ header {
 }
 
 header div:nth-child(1) {
-    font-size: 2em;
+    font-size: 1.75em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%
+}
+
+header div:nth-child(2) {
+    margin-bottom: 0px;
+    font-size: 0.5em;
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    justify-content: right;
 }
 
 .day {
@@ -48,7 +58,7 @@ header div:nth-child(1) {
 
 nav {
     padding-left: 1rem;
-    margin-bottom: 0px;
+    margin-bottom: -0.3em;
     font-size: 0.5em;
     display: flex;
     gap: 1em;
@@ -83,6 +93,10 @@ footer {
     background-color: var(--bg);
     padding-left: var(--grid-size);
     color: var(--month);
+}
+
+::selection {
+    background-color: var(--grid-color);
 }
 
 a {
@@ -120,6 +134,10 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: var(--grid-size);
+}
+
+dl {
     margin: var(--grid-size);
 }
 
@@ -185,4 +203,82 @@ h1, h2, h3, h4, h5, h6 {
     .accent {
         display: none;
     }
+
+    nav {
+        justify-content: left;
+    }
+}
+
+.photopile { 
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.photopile figure { 
+  display: inline-block;
+  background: white;
+  box-shadow: 1px 4px 5px rgba(0,0,0,0.55);
+  transform: rotate(2deg);
+  margin: 0 -25px;
+}
+.photopile figure img {
+  max-width: calc(100% - 2rem);
+  margin: 1rem 1rem 0 1rem;
+  border: 2px rgb(0,0,0,0.55) inset;
+}
+.photopile figcaption, .popovers figcaption {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
+  margin: 0.5rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: black;
+}
+.photopile button { 
+  background: none; 
+  border: none;
+  max-width: 40%;
+}
+.photopile button:hover, .photopile button:focus { 
+  z-index: 3;
+  cursor:pointer;
+}
+.photopile button:nth-child(2n) { 
+  transform: rotate(-10deg);
+}
+.photopile button:nth-child(3n) {
+  transform: rotate(5deg);
+}
+.photopile button:nth-child(4n) { 
+  transform: rotate(4deg);
+}
+.photopile button:nth-child(5n) { 
+  transform: rotate(-2deg);
+}
+.photopile button:nth-child(6n) {
+  transform: rotate(-7deg);
+}
+:popover-open {
+  border: none;
+  box-shadow: 1px 4px 5px rgba(0,0,0,0.55);
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+.popovers figure:popover-open {
+  display: block;
+  background: white;
+  width: 88vmin;
+}
+.popovers figure:popover-open figcaption {
+  margin: 2.5vmin 1rem 4vmin 1rem;
+  font-size: 175%;
+  color: black;
+}
+.popovers figure:popover-open img {
+  margin: 4vmin 4vmin 0 4vmin;
+  width: 80vmin;
+  border: 4px rgb(0,0,0,0.55) inset;
 }
