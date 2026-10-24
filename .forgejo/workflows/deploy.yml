@@ -1,0 +1,29 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: codeberg-tiny
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24.14.1"
+
+      - name: Install dependencies
+        run: npm install --frozen-lockfile # Assumes npm. Change to pnpm or yarn if required.
+
+      - name: Deploy
+        uses: https://codeberg.org/nico-the-tall/deploy2nekoweb@v1.0.0
+        with:
+          SECRET: ${{ secrets.NEKOWEB_SECRET }}
+          DOMAIN: 'strife.nekoweb.org'
+          USERNAME: 'strife'
+          DIRECTORY: '_site' # Change as needed. This is the folder that will be uploaded to Nekoweb.
